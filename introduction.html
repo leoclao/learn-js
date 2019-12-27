@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            What can JavaScript Do?
+        </h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click me!</button>
+        <script>
+            // String method
+            // toUpperCase(); toLowerCase();
+            // var str = 'Method Convert A String';
+            // var str = 'How-are-you-doing-today';
+            var str = 'How are you doing today';
+            // console.log(str.toUpperCase());
+            // console.log(str.toLowerCase());
+            //startsWith(); endsWith()
+            // var str1 = 'AHiHi olala olele';
+            // console.log(str1.startsWith('AHiHi'));
+            // console.log(str1.startsWith('AHi'));
+            // console.log(str1.startsWith('ahihi'));
+
+            // console.log(str1.startsWith('olala', 6));
+            // console.log(str1.startsWith('Olala', 6));
+
+            // console.log(str1.endsWith('olele'));
+            // console.log(str1.endsWith('lele'));
+            // console.log(str1.endsWith('oLeLe'));
+
+            // console.log(str1.endsWith('la', 11));
+            // console.log(str1.endsWith('l', 11));
+
+            // include()
+            // var str2 = 'who are you ???';
+            // console.log(str2.includes('are'));
+            // console.log(str2.includes('????'));
+            // console.log(str2.includes(''));
+            // console.log(str2.includes('are', 6));
+
+            //slide()
+            // console.log(str2.slice());
+            // console.log(str2.slice(4));
+            // console.log(str2.slice(1, 6));
+
+            // charAt()
+            // console.log(str2.charAt());
+            // console.log(str2.charAt(4));
+
+            // split();
+            // console.log(str.split());
+            // console.log(str.split('-'));
+
+            // replace()
+            // console.log(str.replace("you doing", "youu"));
+
+            // repeat();
+            // console.log(str.repeat(3));
+
+            var arr = [0,1,2,3,4,5,6,7,8,9];
+            // forEach();
+            // arr.forEach(item => {
+            //     console.log(item);
+            // });
+
+            // includes();
+            // var n = arr.includes(3,3);
+            // console.log(n);
+
+            // filter();
+            // var n = arr.filter(item => item > 4);
+            // var n = arr.filter(item => item % 2);
+            // var n = arr.filter(item => !(item % 2));
+            // console.log(n);
+            
+            // map();
+            // var n = arr.map(num => num + 1);
+            // console.log(n);
+
+            // reduce();
+            var total = arr.reduce((total, value) => total + value, 0);
+            console.log(total);
+        </script>
+    </body>
+</html>
