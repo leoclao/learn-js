@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Learning JS => String - Method</title>
-    </head>
-    <body>
-        <h1>Learning JS</h1>
-        <h2>String - Method</h2>
-        <div id="upperCase"></div>
-        <div id="lowerCase"></div>
-    </body>
-    <script>
-        // 1, toUpperCase(), toLowerCase()
-        var str = 'Method Converts A String';
-        document.getElementById("upperCase").innerHTML = str.toUpperCase();
-        document.getElementById("lowerCase").innerHTML = str.toLowerCase();
 
-        
-    </script>
+<head>
+    <title>Learning JS => String - Method</title>
+</head>
+
+<body>
+    <h1>Learning JS</h1>
+    <h2>String - Method</h2>
+    <div id="demo"></div>
+</body>
+<script>
+    // 1, toUpperCase(), toLowerCase()
+    var str = 'Method Converts A String';
+    // document.getElementById("demo").innerHTML = str.toUpperCase();
+    // document.getElementById("lowerCase").innerHTML = str.toLowerCase();
+    // 2, startsWith(), endsWith()
+    // console.log(str.startsWith('Converts',8));
+    // console.log(str.endsWith('Converts', 15));
+    // 3, includes()
+    // console.log(str.includes('Converts'));
+    // 4, slice()
+    // var sliceStr = str.slice(9, 10);
+    // document.getElementById("demo").innerHTML = sliceStr.toUpperCase();
+    // 5, charAt();
+    // var charAtStr = str.charAt(10);
+    // document.getElementById("demo").innerHTML = charAtStr.toUpperCase();
+    // 6, split()
+    var splitStr = str.split(" ");
+    document.getElementById("demo").innerHTML = splitStr[2].toUpperCase();
+</script>
+
 </html>
