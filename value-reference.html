@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JS - </title>
+    </head>
+    <body>
+        <h2>
+            What can JavaScript Do?
+        </h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click me!</button>
+        <script>
+            //
+            const Obj1 = {
+                name: 'Dao',
+                age: 35
+            };
+
+            var Obj2 = Obj1;
+            Obj2.name = 'Nguyen';
+            Obj2.age = 31;
+
+            Obj2 = {
+                name: 'Kiet',
+                age: 5
+            }
+
+            const Obj3 = Obj2;
+
+            console.log('Obj1', Obj1);
+            console.log('Obj2', Obj2);
+            console.log('Obj3', Obj3);
+
+            var a = 'Nhut';
+            var b = a;
+            b = 'Kiet';
+            
+            console.log('a', a);
+            console.log('b', b);
+        </script>
+    </body>
+</html>
