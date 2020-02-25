@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning JS - Scope trong java script</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Learning JS - Scope trong java script</h1>
+    </div>
+    <script>
+        //
+        var a = 1;
+
+        function openBlock() {
+            var a = 2;
+        }
+
+        function fullName() {
+            var name = 'Dao Xuan Nhut';
+        }
+
+        console.log('a', a);
+        console.log('name', name);
+
+        //Lexical Scope
+        function functionA() {
+            //Local Scope A
+            var name = 'Tam';
+            function functionB() {
+                console.log('My name is ' + name);
+            }
+
+            functionB();
+        }
+
+        functionA();
+
+
+    </script>
+</body>
+
+</html>
