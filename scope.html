@@ -11,32 +11,46 @@
     </div>
     <script>
         //
-        var a = 1;
+        // var a = 1;
 
-        function openBlock() {
-            var a = 2;
-        }
+        // function openBlock() {
+        //     var a = 2;
+        // }
 
-        function fullName() {
-            var name = 'Dao Xuan Nhut';
-        }
+        // function fullName() {
+        //     var name = 'Dao Xuan Nhut';
+        // }
 
-        console.log('a', a);
-        console.log('name', name);
+        // console.log('a', a);
+        // console.log('name', name);
 
         //Lexical Scope
-        function functionA() {
-            //Local Scope A
-            var name = 'Tam';
-            function functionB() {
-                console.log('My name is ' + name);
-            }
+        // function functionA() {
+        //     //Local Scope A
+        //     var name = 'Tam';
+        //     function functionB() {
+        //         console.log('My name is ' + name);
+        //     }
 
-            functionB();
+        //     functionB();
+        // }
+
+        // functionA();
+
+        // block scope
+        var age = 11;
+        if (age === 11) {
+            var eleven = age;
         }
-
-        functionA();
-
+        console.log(eleven);
+        function functionA() {
+            var age = 2;
+            if (true) {
+                var age = 1;
+            }
+            return age;
+        }
+        console.log(functionA());
 
     </script>
 </body>
