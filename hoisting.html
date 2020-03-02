@@ -10,10 +10,31 @@
         <h1>Learning JS - Hoisting</h1>
     </div>
     <script>
-        //
-        var name;
-        console.log(name);
+        //Hoisting variable
+        // console.log(name);
+        // var name;
+        // name = 'Tam'
 
+        // name = 'Tam';
+        // console.log(name);
+        // var name;
+
+        // Hoisting function
+        // vd: 5
+        // function say() {
+        //     document.write(name);
+        //     var name;
+        //     nam = 'Tam';
+        // }
+        // say();
+
+        // vd6
+        function say() {
+            var name;
+            name = 'Tam';
+            document.write('name is:', name)
+        }
+        say();
     </script>
 </body>
 
