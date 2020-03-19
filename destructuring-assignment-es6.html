@@ -10,7 +10,37 @@
         <h1>Learning JS - Destructuring Assignment trong ES6</h1>
     </div>
     <script>
-        
+        // ex: 1
+        const objA = { mot: 'one', hai: 'two', ba: 'three' };
+        console.log('mot:', objA.mot)
+        // ex: 2
+        // const objB = { mot: 'one', hai: 'two', ba: 'three' };
+        // const soMot = objB.mot;
+        // const soHai = objB.hai;
+        // const arrB = ['mot', 'hai', 'ba'];
+        // const { mot, hai, ba } = objB;
+        // const [mot, hai, ba] = arrB;
+
+        // console.log('objB', mot);
+        // console.log('arrB', mot);
+
+        // khai báo và gán giá trị với object objB và mảng arrB
+
+        const objB = { mot: 'one', hai: 'two', ba: ' three' };
+
+        const arrB = ['mot', 'hai', 'ba'];
+
+        // mình sử dụng Destructuring Assignment
+
+        const { mot, hai, ba } = objB;
+
+        const [mot, hai, ba] = arrB;
+
+        // và in ra kết quả để xem thử nhé
+
+        console.log('objB', mot);
+
+        console.log('arrB', mot);
     </script>
 </body>
 
