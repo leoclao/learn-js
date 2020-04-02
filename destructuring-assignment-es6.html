@@ -11,8 +11,8 @@
     </div>
     <script>
         // ex: 1
-        const objA = { mot: 'one', hai: 'two', ba: 'three' };
-        console.log('mot:', objA.mot)
+        // const objA = { mot: 'one', hai: 'two', ba: 'three' };
+        // console.log('mot:', objA.mot)
         // ex: 2
         // const objB = { mot: 'one', hai: 'two', ba: 'three' };
         // const soMot = objB.mot;
@@ -26,21 +26,29 @@
 
         // khai báo và gán giá trị với object objB và mảng arrB
 
-        const objB = { mot: 'one', hai: 'two', ba: ' three' };
+        // const objB = { mot: 'one', hai: 'two', ba: ' three' };
+        // const arrB = ['mot', 'hai', 'ba'];
 
+        //Destructuring Assignment
+        // const { mot, hai, ba } = objB;
+        // const [mot, hai, ba] = arrB;
+
+        // 
+        // console.log('objB', mot);
+        // console.log('arrB', mot);
+
+        // Array Destructuring
         const arrB = ['mot', 'hai', 'ba'];
+        // Destructuring Assignment
+        const [a, b, c] = arrB;
+        //
+        console.log('arrB', a);
 
-        // mình sử dụng Destructuring Assignment
-
-        const { mot, hai, ba } = objB;
-
-        const [mot, hai, ba] = arrB;
-
-        // và in ra kết quả để xem thử nhé
-
-        console.log('objB', mot);
-
-        console.log('arrB', mot);
+        //Object Destructuring
+        const objB = { mot: 'one', hai: 'two', ba: 'three' };
+        // const { mot, hai, ba } = objB;
+        const { mot: _mot, hai: _hai, ba: _ba } = objB;
+        console.log('objB', _mot);
     </script>
 </body>
 
