@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Learning JS - Destructuring Assignment trong ES6</title>
-</head>
+    <head>
+        <title>Learning JS - Destructuring Assignment trong ES6</title>
+    </head>
 
-<body>
-    <div id="app">
-        <h1>Learning JS - Destructuring Assignment trong ES6</h1>
-    </div>
-    <script>
-        // ex: 1
-        // const objA = { mot: 'one', hai: 'two', ba: 'three' };
-        // console.log('mot:', objA.mot)
-        // ex: 2
-        // const objB = { mot: 'one', hai: 'two', ba: 'three' };
-        // const soMot = objB.mot;
-        // const soHai = objB.hai;
-        // const arrB = ['mot', 'hai', 'ba'];
-        // const { mot, hai, ba } = objB;
-        // const [mot, hai, ba] = arrB;
+    <body>
+        <div id="app">
+            <h1>Learning JS - Destructuring Assignment trong ES6</h1>
+        </div>
+        <script>
+            // ex: 1
+            // const objA = { mot: 'one', hai: 'two', ba: 'three' };
+            // console.log('mot:', objA.mot)
+            // ex: 2
+            // const objB = { mot: 'one', hai: 'two', ba: 'three' };
+            // const soMot = objB.mot;
+            // const soHai = objB.hai;
+            // const arrB = ['mot', 'hai', 'ba'];
+            // const { mot, hai, ba } = objB;
+            // const [mot, hai, ba] = arrB;
 
-        // console.log('objB', mot);
-        // console.log('arrB', mot);
+            // console.log('objB', mot);
+            // console.log('arrB', mot);
 
-        // khai báo và gán giá trị với object objB và mảng arrB
+            // khai báo và gán giá trị với object objB và mảng arrB
 
-        // const objB = { mot: 'one', hai: 'two', ba: ' three' };
-        // const arrB = ['mot', 'hai', 'ba'];
+            // const objB = { mot: 'one', hai: 'two', ba: ' three' };
+            // const arrB = ['mot', 'hai', 'ba'];
 
-        //Destructuring Assignment
-        // const { mot, hai, ba } = objB;
-        // const [mot, hai, ba] = arrB;
+            //Destructuring Assignment
+            // const { mot, hai, ba } = objB;
+            // const [mot, hai, ba] = arrB;
 
-        // 
-        // console.log('objB', mot);
-        // console.log('arrB', mot);
+            // 
+            // console.log('objB', mot);
+            // console.log('arrB', mot);
 
-        // Array Destructuring
-        const arrB = ['mot', 'hai', 'ba'];
-        // Destructuring Assignment
-        const [a, b, c] = arrB;
-        //
-        console.log('arrB', a);
+            // Array Destructuring
+            // const arrB = ['mot', 'hai', 'ba'];
+            // Destructuring Assignment
+            // const [a, b, c] = arrB;
+            //
+            // console.log('arrB', a);
 
-        //Object Destructuring
-        const objB = { mot: 'one', hai: 'two', ba: 'three' };
-        // const { mot, hai, ba } = objB;
-        const { mot: _mot, hai: _hai, ba: _ba } = objB;
-        console.log('objB', _mot);
-    </script>
-</body>
+            //Object Destructuring
+            // const objB = { mot: 'one', hai: 'two', ba: 'three' };
+            // const { mot, hai, ba } = objB;
+            // const { mot: _mot, hai: _hai, ba: _ba } = objB;
+            // console.log('objB', _mot);
+
+            // Object literal
+            // const soMot = 1, soHai = 2, soBa = 3;
+            // const objC = { _soMot: soMot, _soHai: soHai, _soBa: soBa };
+            // console.log('objC', _soMot)
+            // const objB = { mot: 'one', hai: 'two', ba: 'three' };
+            // var mot, hai, ba;
+            // ({ mot, hai, ba } = objB);
+            // console.log('objB', mot);
+            // Default values
+            // const { mot, hai, ba, bon = 'Number four', nam } = objB;
+            //
+            // console.log('bon', bon);
+            // console.log('nam', nam);
+            // Nested Destructuring
+            // - Nested Destructuring Object
+            // const objB = { mot: 'one', hai: { ho: 'Dao', ten: 'Nhut' } };
+            // const { hai: { ho } } = objB;
+            // console.log('ho', ho);
+            // - Nested Destructuring Array
+            // const arrB = [1, [2, 3, 4], 5];
+            // const [a, [b, c, d], e] = arrB;
+            // console.log(a, b, c, d, e);
+            // Destructuring Parameters
+            // Destructuring Parameters Array 
+            // function Sum([a, b, c]) {
+            //     c = a + b
+            //     console.log('Destructuring Parameters Array:', c);
+            // }
+            // Sum([6, 9]);
+            // Destructuring Parameters Object:
+            function sum({ a, b }) {
+                console.log('Destructuring Parameters Object:', a + b);
+            }
+            sum({ a: 5, b: 6 })
+        </script>
+    </body>
 
 </html>
