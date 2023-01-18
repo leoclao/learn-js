@@ -1,9 +1,16 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
   background-color: #ff9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+  margin: 0;
+  padding: 0;
+  /* padding: 0 20px 20px 20px; */
+  /* border: 5px solid black; */
 }
 
 h1 {
@@ -15,4 +22,14 @@ h1 {
 
 p {
   color: red;
+}
+
+main {
+  padding: 0 3vw;
+}
+
+.banner img {
+  aspect-ratio: 1500 / 1098;
+  width: 100%;
+  height: auto;
 }
